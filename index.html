@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="searchMovies.css">
+    <title>Search Movies</title>
+</head>
+<body>
+    <div class="container">
+        <div class="searching">
+            <div class="input_wrapper">
+                <input id="input" class="input"type="text"
+                placeholder="enter title of movie">
+                <div id="clear-btn" class="clear-btn_wrapper"><span class="clear-btn"></span></div>
+            </div>
+            <div class="btn_wrapper">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+        </div>
+        <div class="movies-list_wrapper">
+            <ul id="movies-list" class="movies-list">
+                <!-- <li class="movie-item">
+                    <img class="movie-item__image"src="" alt="">
+                    <div class="movie-item__description">
+                        <h2 class="description__title">Batman Begins</h2>
+                        <p class="description__year">2005</p>
+                        <p class="description__type">Фильм</p>
+                    </div>
+                </li>                
+                 -->               
+            </ul>
+        </div>
+        <div id="movie-popup" class="movie-popup">
+            <div class="container container__movie-popup">
+                <div class="back-btn__wrapper">
+                    <div id="back-btn"class="back-btn">back to searching</div>
+                </div>
+                <div class="movie-popup__content">
+                    <img id="poster" class="movie-popup__image" src="" alt="">
+                    <div class="movie-popup__description">
+                        <div id="title" class="description__title">Batman Begins</div>
+                        <ul class="description__properties-list">
+                            <li>
+                                <span class="property">Year:</span>
+                                <span id="year" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Rated: </span>
+                                <span id="rated" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Relased: </span>
+                                <span id="relased" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Runtime: </span>
+                                <span id="runtime" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Genre: </span>
+                                <span id="genre" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Director: </span>
+                                <span id="director" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Writter: </span>
+                                <span id="writter" class="property property-value">2005</span>
+                            </li>
+                            <li>
+                                <span class="property">Actors: </span>
+                                <span id="actors" class="property property-value">2005</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="plot" class="description__plot">After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchMovies.js"></script>
+</body>
+</html>
