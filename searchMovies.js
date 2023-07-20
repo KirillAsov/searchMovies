@@ -18,7 +18,7 @@ const getNameMovie = () => {
 //Создание списка найденных фильмов с кратким описанием 
 const renderMoviesList = (moviesList) => {
     moviesListNode.innerHTML = '';
-    for (var i = 0; i < moviesList.length; i++) {
+    for (let i = 0; i < moviesList.length; i++) {
         const movieItem = document.createElement('li');
         movieItem.className = 'movie-item';
         movieItem.setAttribute('data-imdbid', moviesList[i].imdbID)
