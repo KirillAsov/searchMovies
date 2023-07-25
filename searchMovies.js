@@ -11,8 +11,7 @@ const NEGATIVE_RESULT = 'negative-result';
 
 //Получаем название фильма для поиска
 const getNameMovie = () => {
-    const nameMovie = inputNode.value;
-    return nameMovie;
+    return inputNode.value;
 }
 
 //Создание списка найденных фильмов с кратким описанием 
